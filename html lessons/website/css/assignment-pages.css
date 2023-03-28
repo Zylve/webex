@@ -1,0 +1,34 @@
+.section-header {
+    color: #ffffff;
+    text-align: center;
+    position: relative;
+    top: 50px;
+}
+
+.section-header-title {
+    font-size: 50px;
+}
+
+.section-header-description {
+    font-size: 20px;
+}
+
+.assignment-list {
+    text-align: center;
+    position: relative;
+    top: 50px;
+}
+
+.assignment {
+    color: #dddddd;
+    border: none;
+    outline: none;
+    cursor: pointer;
+
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.assignment:hover {
+    color: #aaaaaa;
+}
