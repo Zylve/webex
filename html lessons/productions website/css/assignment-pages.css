@@ -32,3 +32,16 @@
 .assignment:hover {
     color: #aaaaaa;
 }
+
+.assignment-program {
+    text-align: center;
+    margin: auto;
+    margin-top: 8.5%;
+    width: 50%;
+    color: #ffffff;
+}
+
+.assignment-program img {
+    width: 20%;
+    height: auto;
+}
