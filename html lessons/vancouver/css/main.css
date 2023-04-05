@@ -64,11 +64,3 @@ body {
     color: #ffffff;
     text-align: center;
 }
-
-#image-collage {
-    margin-bottom: 250px;
-}
-
-#image-collage img {
-    height: 250px;
-}
