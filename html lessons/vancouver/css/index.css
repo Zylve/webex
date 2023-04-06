@@ -1,5 +1,22 @@
+#image-background {
+    background-image: url("../img/background-index.jpg");
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: block;
+    filter: blur(3px);
+    -webkit-filter: blur(3px);
+
+    height: 100vh;
+    left: 0;
+    position: fixed;
+    right: 0;
+    z-index: 0;
+}
 
 #image-collage {
+    width: 100%;
+
     margin-bottom: 250px;
 }
 

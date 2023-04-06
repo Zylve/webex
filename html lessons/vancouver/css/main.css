@@ -2,11 +2,6 @@ html {
     min-height: 100%;
 }
 
-body {
-    background-color: #1c1c1c;
-    background: linear-gradient(180deg, rgba(16, 16, 16, 1) 0%, rgba(32, 32, 32, 1) 100%);
-}
-
 .button-header {
     color: #eeeeee;
     float: right;
@@ -60,7 +55,10 @@ body {
 }
 
 #main-content {
-    margin-top: 125px;
+    position: fixed;
+    width: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     color: #ffffff;
     text-align: center;
 }
