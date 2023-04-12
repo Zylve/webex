@@ -1,5 +1,8 @@
-html {
-    min-height: 100%;
+html, body, main {
+    height: 100%;
+    margin: 0;
+
+    background-color: transparent;
 }
 
 .button-header {
@@ -26,6 +29,12 @@ html {
     width: 100%;
     background-color: #3c3c3c;
     text-align: center;
+
+    z-index: 3;
+}
+
+#footer {
+    z-index: 3;
 }
 
 #button-home {
@@ -41,7 +50,7 @@ html {
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: rgb(255, 255, 255);
+    background-color: #ffffff;
     text-align: center;
 }
 
@@ -55,10 +64,13 @@ html {
 }
 
 #main-content {
-    position: fixed;
-    width: 100%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #ffffff;
+    position: relative;
+    margin-top: 125px;
+
     text-align: center;
+    z-index: 2;
+
+    min-height: 100%;
+
+    color: #ffffff;
 }

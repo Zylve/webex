@@ -1,5 +1,5 @@
 #image-background {
-    background-image: url("../img/background-attractions.jpg");
+    background-image: url("../img/background-restaurants.jpg");
 
     background-size: cover;
     background-position: center;
@@ -16,10 +16,12 @@
     filter: blur(2px) brightness(0.65);
 }
 
-.image-collage {
+#image-collage {
     width: 100%;
+
+    margin-bottom: 250px;
 }
 
-.image-collage img {
+#image-collage img {
     height: 250px;
 }
