@@ -1,0 +1,17 @@
+#colour {
+    color: red;
+}
+
+#font {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#size {
+    font-size: 50px;
+}
+
+#border {
+    border-style: dashed;
+    padding: 25px;
+    margin: 25px;
+}
