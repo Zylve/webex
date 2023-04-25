@@ -15,13 +15,3 @@
     z-index: 0;
     filter: blur(2px) brightness(0.65);
 }
-
-#image-collage {
-    width: 100%;
-
-    margin-bottom: 250px;
-}
-
-#image-collage img {
-    height: 250px;
-}
