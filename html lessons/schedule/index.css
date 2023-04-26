@@ -1,0 +1,28 @@
+#main-content {
+    display: flex;
+    justify-content: center;
+}
+
+#courses {
+    align-self: center;
+    margin-top: 40vh;
+}
+
+#courses, #courses th, #courses td {
+    border: 4px;
+    border-color: black;
+    border-style: solid;
+    border-collapse: collapse;
+}
+
+colgroup #sem1 {
+    background-color: lightblue;
+}
+
+colgroup #sem2 {
+    background-color: lightpink;
+}
+
+#courses th {
+    background-color: white;
+}
