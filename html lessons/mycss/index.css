@@ -1,0 +1,24 @@
+body {
+    font-family: sans-serif;
+}
+
+h1#name {
+    text-align: center;
+}
+
+span.bc {
+    color: green;
+    font-weight: 900;
+}
+
+a.gl img {
+    height: 250px;
+}
+
+img#self {
+    float: left;
+    border: 25px;
+    border-style: solid;
+    border-color: black;
+    margin: 100px;
+}
