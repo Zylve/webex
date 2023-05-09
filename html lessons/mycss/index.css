@@ -17,8 +17,12 @@ a.gl img {
 
 img#self {
     float: left;
+
+    height: 500px;
+
     border: 25px;
     border-style: solid;
     border-color: black;
     margin: 100px;
+
 }
