@@ -3,3 +3,7 @@ h1#title {
     color: darkblue;
     background-color: #6495ed;
 }
+
+div.answer {
+    color: #6495ed;
+}
