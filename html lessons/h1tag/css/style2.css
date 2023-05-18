@@ -1,0 +1,9 @@
+h1#title {
+    text-align: center;
+    color: darkblue;
+    background-color: #6495ed;
+}
+
+div.answer {
+    color: #6495ed;
+}
