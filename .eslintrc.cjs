@@ -1,19 +1,115 @@
 /* eslint-env node */
 module.exports = {
-  root: true,
-  'extends': [
-    'plugin:vue/vue3-essential',
-    'eslint:recommended'
-  ],
+    root: true,
+    'extends': [
+        'plugin:vue/vue3-essential',
+        'plugin:vue/vue3-strongly-recommended',
+        'plugin:vue/vue3-recommended',
+    ],
 
-  parserOptions: {
-    ecmaVersion: 'latest'
-  },
+    parserOptions: {
+        ecmaVersion: 'latest'
+    },
 
-  overrides: [
-    {
-      files: ['public/ict/**/*.js'],
-      rules: {}
+    overrides: [
+        {
+            files: ['public/ict/**/*.js'],
+            rules: {}
+        }
+    ],
+
+    rules: {
+        'array-callback-return': 'warn',
+        'constructor-super': 'error',
+        'for-direction': 'warn',
+        'getter-return': ['error', { allowImplicit: true }],
+        'no-async-promise-executor': 'warn',
+        'no-await-in-loop': 'warn',
+        'no-class-assign': 'error',
+        'no-compare-neg-zero': 'warn',
+        'no-cond-assign': 'error',
+        'no-const-assign': 'error',
+        'no-constant-binary-expression': 'warn',
+        'no-constant-condition': ["warn", { "checkLoops": false }],
+        'no-constructor-return': 'warn',
+        'no-control-regex': 'warn',
+        'no-debugger': 'off',
+        'no-dupe-args': 'error',
+        'no-dupe-class-members': 'error',
+        'no-dupe-else-if': 'warn',
+        'no-dupe-keys': 'error',
+        'no-duplicate-case': 'error',
+        'no-duplicate-imports': ['warn', { 'includeExports': true }],
+        'no-empty-character-class': 'warn',
+        'no-empty-pattern': 'warn',
+        'no-ex-assign': 'error',
+        'no-fallthrough': ['error', { "commentPattern": "fallthrough" }],
+        'no-func-assign': 'error',
+        'no-import-assign': 'error',
+        'no-inner-declarations': 'error',
+        'no-invalid-regexp': 'error',
+        'no-irregular-whitespace': ['warn', { 'skipStrings': true, 'skipComments': true, 'skipRegExps': true, 'skipTemplates': true }],
+        'no-loss-of-precision': 'warn',
+        'no-misleading-character-class': 'warn',
+        'no-obj-calls': 'error',
+        'no-promise-executor-return': 'warn',
+        'no-prototype-builtins': 'error',
+        'no-self-assign': 'warn',
+        'no-self-compare': 'warn',
+        'no-setter-return': 'error',
+        'no-sparse-arrays': 'warn',
+        'no-template-curly-in-string': 'warn',
+        'no-this-before-super': 'error',
+        'no-undef': 'error',
+        'no-unexpected-multiline': 'warn',
+        'no-unmodified-loop-condition': 'off',
+        'no-unreachable': 'warn',
+        'no-unreachable-loop': 'warn',
+        'no-unsafe-finally': 'warn',
+        'no-unsafe-negation': 'error',
+        'no-unsafe-optional-chaining': ['warn', { 'disallowArithmeticOperators': true }],
+        'no-unused-private-class-members': 'off',
+        'no-unused-vars': ['warn', { 'vars': 'local', 'args': 'after-used', 'ignoreRestSiblings': false }],
+        'no-use-before-define': ['warn', { 'functions': false, 'classes': false, 'variables': false }],
+        'no-useless-backreference': 'warn',
+        'use-isnan': 'error',
+        'valid-typeof': 'error',
+
+        'accessor-pairs': 'warn',
+        'arrow-body-style': ['warn', 'as-needed'],
+        'curly': ['warn', 'all'],
+        'default-case-last': 'warn',
+        'default-param-last': 'error',
+        'dot-notation': 'warn',
+        'func-name-matching': 'warn',
+        'func-names': ['warn', 'as-needed'],
+        'func-style': ['warn', 'declaration', { 'allowArrowFunctions': true }],
+        'grouped-accessor-pairs': ['warn', 'getBeforeSet'],
+        'guard-for-in': 'warn',
+        'logical-assignment-operators': 'warn',
+        'multiline-comment-style': ['warn', 'starred-block'],
+        'no-extra-boolean-cast': 'warn',
+        'no-extra-semi': 'warn',
+        'no-global-assign': 'error',
+        'no-lonely-if': 'warn',
+        'no-nonoctal-decimal-escape': 'warn',
+        'no-octal': 'warn',
+        'no-redeclare': 'error',
+        'no-regex-spaces': 'warn',
+        'no-shadow-restricted-names': 'error',
+        'no-unused-labels': 'warn',
+        'no-useless-catch': 'warn',
+        'no-useless-escape': 'warn',
+        'no-var': 'error',
+        'no-with': 'error',
+        'prefer-arrow-callback': 'warn',
+        'prefer-const': 'warn',
+        'prefer-template': 'warn',
+        'require-yield': 'warn',
+        'sort-imports': 'warn',
+        'yoda': 'warn',
+
+        'arrow-parens': ['warn', 'always'],
+        'no-mixed-spaces-and-tabs': 'warn',
     }
-  ]
 }
