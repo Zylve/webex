@@ -26,12 +26,60 @@ onMounted(() => {
 </script>
 
 <template>
-    <span>{{ count }}</span>
-    <br>
-    <button @click="increment">
-        +
-    </button>
-    <button @click="decrement">
-        -
-    </button>
+    <main>
+        <div>
+            <span>{{ count }}</span>
+            <br>
+            <button
+                id="decrement"
+                @click="decrement"
+            >
+                -
+            </button>
+            
+            <button
+                id="increment"
+                @click="increment"
+            >
+                +
+            </button>
+        </div>
+    </main>
 </template>
+
+<style scoped>
+    main {
+        background-color: aliceblue;
+
+        height: 100vh;
+        width: 100vw;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    div {
+        text-align: center;
+    }
+
+    span {
+        font-size: 5rem;
+    }
+
+    button#increment {
+        margin-left: 10px;
+    }
+
+    button {
+        background-color: orangered;
+        color: white;
+
+        font-size: 1.5rem;
+        padding-left: 100px;
+        padding-right: 100px;
+
+        border: none;
+        border-radius: 20px;
+    }
+</style>
