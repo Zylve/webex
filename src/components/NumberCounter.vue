@@ -5,11 +5,11 @@ import { ref } from 'vue'
 const count = ref(0);
 
 function increment() {
-  count.value++;
+    count.value++;
 }
 
 function decrement() {
-  count.value--;
+    count.value--;
 }
 
 </script>
@@ -17,6 +17,10 @@ function decrement() {
 <template>
     <span>{{ count }}</span>
     <br>
-    <button @click="increment">+</button>
-    <button @click="decrement">-</button>
+    <button @click="increment">
+        +
+    </button>
+    <button @click="decrement">
+        -
+    </button>
 </template>
