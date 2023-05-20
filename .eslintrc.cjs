@@ -117,5 +117,7 @@ module.exports = {
         'vue/html-indent': ['warn', 4],
         'vue/html-comment-indent': ['warn', 4],
         'vue/script-indent': ['warn', 4],
+        'vue/multi-word-component-names': 'off',
+        'vue/singleline-html-element-content-newline': 'off',
     }
 }

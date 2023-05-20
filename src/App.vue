@@ -1,9 +1,20 @@
 <script setup>
-import NumberCounter from './components/NumberCounter.vue';
 </script>
 
 <template>
     <main>
-        <NumberCounter />
+        <router-view />
     </main>
 </template>
+
+<style scoped>
+    main {
+        background-color: aliceblue;
+        overflow: hidden;
+
+    }
+
+    main :deep(main) {
+        height: 100vh;
+    }
+</style>
