@@ -11,10 +11,5 @@
     main {
         background-color: aliceblue;
         overflow: hidden;
-
-    }
-
-    main :deep(main) {
-        height: 100vh;
     }
 </style>
