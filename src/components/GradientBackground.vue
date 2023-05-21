@@ -5,7 +5,7 @@ const gradientStyle = reactive({
     height: '100vh',
     width: '100vw',
 
-    background: ''
+    background: 'linear-gradient(135deg, hsl(0, 100%, 50%), hsl(60, 100%, 50%))'
 });
 
 const interval = 25;

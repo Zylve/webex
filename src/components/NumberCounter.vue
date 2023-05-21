@@ -56,19 +56,16 @@ onMounted(() => {
         font-size: 5rem;
     }
 
-    button#increment {
-        margin-left: 10px;
-    }
-
     button {
         background-color: orangered;
         color: white;
 
         font-size: 1.5rem;
-        padding-left: 100px;
-        padding-right: 100px;
+        width: 200px;
 
         border: none;
         border-radius: 20px;
+
+        margin: 2px 5px 2px 5px;
     }
 </style>

@@ -1,11 +1,9 @@
 <script setup>
-import GradientBackground from '../components/GradientBackground.vue';
 import Header from '@/components/Header.vue'
 </script>
 
 <template>
     <main>
-        <GradientBackground id="bg" />
         <Header id="header" />
         <div id="content">
             <h1>About</h1>

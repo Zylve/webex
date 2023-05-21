@@ -1,12 +1,10 @@
 <script setup>
-import GradientBackground from '@/components/GradientBackground.vue'
 import Header from '@/components/Header.vue'
 import NumberCounter from '@/components/NumberCounter.vue';
 </script>
 
 <template>
     <main>
-        <GradientBackground id="bg" />
         <Header id="header" />
         <NumberCounter id="counter" />
     </main>
