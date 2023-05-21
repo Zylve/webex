@@ -9,7 +9,7 @@
 
 <style scoped>
     main {
-        background-color: aliceblue;
+        background-color: transparent;
         overflow: hidden;
     }
 </style>

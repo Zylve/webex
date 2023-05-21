@@ -2,6 +2,12 @@ main {
     height: 100vh;
 }
 
+
+#bg {
+    position: absolute;
+    z-index: -1;
+}
+
 #header {
     height: auto;
 }
