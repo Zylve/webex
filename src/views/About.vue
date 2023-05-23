@@ -12,6 +12,7 @@ import Header from '@/components/Header.vue'
 </template>
 
 <style scoped>
+    @import '@/assets/css/header.css';
     @import '@/assets/css/view.css';
 
     #content {
