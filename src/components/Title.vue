@@ -12,16 +12,10 @@ console.log(props.title)
 </script>
 
 <template>
-    <main id="main">
-        <p>{{ props.title }}</p>
-    </main>
+    <p>{{ props.title }}</p>
 </template>
 
 <style scoped>
-    main {
-        height: 3rem;
-    }
-
     p {
         font-size: 2rem;
         font-weight: bold;
