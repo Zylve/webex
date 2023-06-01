@@ -1,10 +1,8 @@
 <script setup>
-import GradientBackground from './components/GradientBackground.vue';
 </script>
 
 <template>
     <main>
-        <GradientBackground id="bg" />
         <router-view />
     </main>
 </template>

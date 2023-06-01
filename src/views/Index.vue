@@ -1,42 +1,35 @@
 <script setup>
-import Header from '@/components/Header.vue'
-import Title from '../components/Title.vue';
+import InfoBlock from '../components/InfoBlock.vue';
 </script>
 
 <template>
     <main>
-        <Header id="header" />
-        <div id="board">
-            <Title title="Zylve.me" />
-            <p>Zylve.me</p>
-        </div>
+        <InfoBlock id="main-block">
+            <h1>Vuk Tacic</h1>
+            <p>A human</p>
+        </InfoBlock>
     </main>
 </template>
 
 <style scoped>
-    @import '@/assets/css/header.css';
     @import '@/assets/css/view.css';
 
     main {
-        align-items: center;
-        justify-content: center;
+        background-color: #1c1c1c;
+    }
 
+    #main-block {
         display: flex;
         flex-direction: column;
-    }
+        margin-left: 5rem;
 
-    #board {
-        background-color: white;
-        width: 75vw;
-        height: 75vh;
+        height: 30rem;
+        width: 30rem;
         border-radius: 1rem;
-        box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.5);
-        border: 5px solid black;
-    }
 
-    #header {
-        position: absolute;
-        top: 0px;
-    }
+        background-color: #252525;
+        color: white;
 
+        padding: 1rem;
+    }
 </style>
