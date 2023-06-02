@@ -27,16 +27,16 @@ import InfoBlock from '../components/InfoBlock.vue';
     }
 
     #main-area {
+        display: flex;
         height: 100vh;
         overflow: hidden;
+        align-items: center;
     }
 
     #main-block {
         display: flex;
         flex-direction: column;
-        margin-left: 25vh;
-        margin-top: 25vh;
-        margin-bottom: 25vh;
+        margin-left: 10vw;
 
         height: 30rem;
         width: 30rem;
