@@ -31,6 +31,7 @@ import InfoBlock from '../components/InfoBlock.vue';
         height: 100vh;
         overflow: hidden;
         align-items: center;
+        animation: fade-in 1.5s ease-in-out;
     }
 
     #main-block {
@@ -41,12 +42,11 @@ import InfoBlock from '../components/InfoBlock.vue';
 
         height: 30rem;
         width: 30rem;
+        padding: 1rem;
         border-radius: 1rem;
 
         background-color: #251e3a;
         color: white;
-
-        padding: 1rem;
     }
 
     #main-block-info {

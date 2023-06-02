@@ -1,3 +1,4 @@
+import './assets/css/animation.css'
 import './assets/css/font.css'
 
 import App from './App.vue'
