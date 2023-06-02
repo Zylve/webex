@@ -34,6 +34,7 @@ import InfoBlock from '../components/InfoBlock.vue';
     }
 
     #main-block {
+        z-index: 1;
         display: flex;
         flex-direction: column;
         margin-left: 10vw;
@@ -65,5 +66,6 @@ import InfoBlock from '../components/InfoBlock.vue';
 
         height: 100vh;
         mask-image: linear-gradient(to left, rgba(0, 0, 0, 0.667), rgba(0, 0, 0, 0));
+        -webkit-mask-image: linear-gradient(to left, rgba(0, 0, 0, 0.667), rgba(0, 0, 0, 0));
     }
 </style>
