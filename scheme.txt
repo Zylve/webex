@@ -1,5 +1,9 @@
+General:
 #635985
 #443C68
 #393053
 #251e3a
 #18122B
+
+Section Border:
+#443C68
