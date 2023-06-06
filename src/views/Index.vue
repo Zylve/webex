@@ -20,8 +20,9 @@ window.addEventListener('scroll', detectScroll);
                 <h1 id="skill-block-title">Skills</h1>
                 <div id="skills-area">
                     <InfoBlock class="skill fade-element percent-120">
+                        
                         <h2>Programming</h2>
-                        <p>C++, C#, Java</p>
+                        <p>4 Years of C#<br>2 Years of Java<br>1 Year of C++<br></p>
                     </InfoBlock>
                     <InfoBlock class="skill fade-element percent-120">
                         <h2>Programming</h2>
