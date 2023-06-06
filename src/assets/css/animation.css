@@ -6,3 +6,12 @@
         opacity: 1;
     }
 }
+
+.fade-element {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.fade-element.fade-in {
+    opacity: 1;
+}

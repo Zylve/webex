@@ -1,10 +1,8 @@
 <script setup>
 import InfoBlock from '../components/InfoBlock.vue';
+import detectScroll from '../assets/js/elementInViewport.js'
 
-function isVisible(element) {
-    const rect = element.getBoundingClientRect();
-    return rect.top < window.innerHeight && rect.bottom >= 0;
-}
+window.addEventListener('scroll', detectScroll);
 </script>
 
 <template>
@@ -17,13 +15,11 @@ function isVisible(element) {
             </InfoBlock>
             <img id="splash" src="@/assets/img/index/splash.jpg">
         </div>
-        <Transition name="fadein">
-            <div id="skill-area">
-                <InfoBlock id="skill-block">
-                    <h1 id="skill-block-title">Skills</h1>
-                </InfoBlock>
-            </div>
-        </Transition>
+        <div id="skill-area">
+            <InfoBlock id="skill-block" class="fade-element">
+                <h1 id="skill-block-title">Skills</h1>
+            </InfoBlock>
+        </div>
     </main>
 </template>
 
@@ -43,7 +39,7 @@ function isVisible(element) {
         height: 100vh;
         overflow: hidden;
         align-items: center;
-        animation: fade-in 1.5s ease-in-out;
+        animation: fade-in 1s ease-in-out;
 
         border-bottom: 2rem solid #443C68;
     }
@@ -111,15 +107,5 @@ function isVisible(element) {
     #skill-block-title {
         margin-left: auto;
         margin-right: auto;
-    }
-
-    .fadein-enter-active,
-    .fadein-leave-active {
-        transition: opacity 0.5s ease;
-    }
-
-    .fadein-enter-from,
-    .fadein-leave-to {
-        opacity: 0;
     }
 </style>
