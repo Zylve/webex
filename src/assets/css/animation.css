@@ -10,8 +10,10 @@
 .fade-element {
     opacity: 0;
     transition: opacity 1s ease-in-out;
+    pointer-events: none;
 }
 
 .fade-element.fade-in {
     opacity: 1;
+    pointer-events: none;
 }

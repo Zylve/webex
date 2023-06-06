@@ -18,6 +18,32 @@ window.addEventListener('scroll', detectScroll);
         <div id="skill-area">
             <InfoBlock id="skill-block" class="fade-element percent-30">
                 <h1 id="skill-block-title">Skills</h1>
+                <div id="skills-area">
+                    <InfoBlock class="skill fade-element percent-120">
+                        <h2>Programming</h2>
+                        <p>C++, C#, Java</p>
+                    </InfoBlock>
+                    <InfoBlock class="skill fade-element percent-120">
+                        <h2>Programming</h2>
+                        <p>C++, C#, Java</p>
+                    </InfoBlock>
+                    <InfoBlock class="skill fade-element percent-120">
+                        <h2>Programming</h2>
+                        <p>C++, C#, Java</p>
+                    </InfoBlock>
+                    <InfoBlock class="skill fade-element percent-120">
+                        <h2>Programming</h2>
+                        <p>C++, C#, Java</p>
+                    </InfoBlock>
+                    <InfoBlock class="skill fade-element percent-120">
+                        <h2>Programming</h2>
+                        <p>C++, C#, Java</p>
+                    </InfoBlock>
+                    <InfoBlock class="skill fade-element percent-120">
+                        <h2>Programming</h2>
+                        <p>C++, C#, Java</p>
+                    </InfoBlock>
+                </div>
             </InfoBlock>
         </div>
     </main>
@@ -106,5 +132,26 @@ window.addEventListener('scroll', detectScroll);
     #skill-block-title {
         margin-left: auto;
         margin-right: auto;
+    }
+
+    #skills-area {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+
+    .skill {
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        margin: 1rem;
+
+        height: 15rem;
+        width: 25rem;
+        padding: 1rem;
+        border-radius: 1rem;
+
+        background-color: #393053;
+        color: white;
     }
 </style>
