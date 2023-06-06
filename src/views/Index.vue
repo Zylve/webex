@@ -16,7 +16,7 @@ window.addEventListener('scroll', detectScroll);
             <img id="splash" src="@/assets/img/index/splash.jpg">
         </div>
         <div id="skill-area">
-            <InfoBlock id="skill-block" class="fade-element">
+            <InfoBlock id="skill-block" class="fade-element percent-30">
                 <h1 id="skill-block-title">Skills</h1>
             </InfoBlock>
         </div>
@@ -84,7 +84,6 @@ window.addEventListener('scroll', detectScroll);
         height: 100vh;
         overflow: hidden;
         align-items: center;
-        animation: fade-in 1.5s ease-in-out;
     }
 
     #skill-block {
