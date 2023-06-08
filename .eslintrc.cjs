@@ -106,7 +106,6 @@ module.exports = {
         'prefer-const': 'warn',
         'prefer-template': 'warn',
         'require-yield': 'warn',
-        'sort-imports': 'warn',
         'yoda': 'warn',
 
         'arrow-parens': ['warn', 'always'],
@@ -120,5 +119,6 @@ module.exports = {
         'vue/multi-word-component-names': 'off',
         'vue/singleline-html-element-content-newline': 'off',
         'vue/max-attributes-per-line': 'off',
+        'vue/component-definition-name-casing': ["error", "PascalCase" | "kebab-case"],
     }
 }
