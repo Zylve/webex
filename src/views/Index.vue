@@ -20,29 +20,17 @@ window.addEventListener('scroll', detectScroll);
                 <h1 id="skill-block-title">Skills</h1>
                 <div id="skills-area">
                     <InfoBlock class="skill fade-element percent-120">
-                        
-                        <h2>Programming</h2>
-                        <p>4 Years of C#<br>2 Years of Java<br>1 Year of C++<br></p>
-                    </InfoBlock>
-                    <InfoBlock class="skill fade-element percent-120">
-                        <h2>Programming</h2>
-                        <p>C++, C#, Java</p>
-                    </InfoBlock>
-                    <InfoBlock class="skill fade-element percent-120">
-                        <h2>Programming</h2>
-                        <p>C++, C#, Java</p>
-                    </InfoBlock>
-                    <InfoBlock class="skill fade-element percent-120">
-                        <h2>Programming</h2>
-                        <p>C++, C#, Java</p>
-                    </InfoBlock>
-                    <InfoBlock class="skill fade-element percent-120">
-                        <h2>Programming</h2>
-                        <p>C++, C#, Java</p>
-                    </InfoBlock>
-                    <InfoBlock class="skill fade-element percent-120">
-                        <h2>Programming</h2>
-                        <p>C++, C#, Java</p>
+                        <font-awesome-icon :icon="['fas', 'code']" size="3x" fixed-width class="skill-icon" />
+                        <div class="vertical-divider"></div>
+                        <div class="skill-container">
+                            <h2>Programming</h2>
+                            <ul class="fa-ul">
+                                <li><span class="fa-li"><font-awesome-icon :icon="['fas', 'circle']" size="2xs" /></span>4 Years of C#</li>
+                                <li><span class="fa-li"><font-awesome-icon :icon="['fas', 'circle']" size="2xs" /></span>2 Years of Java</li>
+                                <li><span class="fa-li"><font-awesome-icon :icon="['fas', 'circle']" size="2xs" /></span>1 Year of C++</li>
+                                <li><span class="fa-li"><font-awesome-icon :icon="['fas', 'circle']" size="2xs" /></span>6 Months of Javascript</li>
+                            </ul>
+                        </div>
                     </InfoBlock>
                 </div>
             </InfoBlock>
@@ -144,15 +132,31 @@ window.addEventListener('scroll', detectScroll);
     .skill {
         z-index: 1;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        align-items: center;
         margin: 1rem;
 
         height: 15rem;
         width: 25rem;
-        padding: 1rem;
+        padding: 2rem;
         border-radius: 1rem;
 
         background-color: #393053;
         color: white;
+    }
+
+    .skill-container {
+        height: auto;
+    }
+
+    .skill .vertical-divider {
+        position: relative;
+        margin-left: 2rem;
+        margin-right: 2rem;
+
+        height: 14rem;
+        width: 0.25rem;
+
+        background-color: white;
     }
 </style>
