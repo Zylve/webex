@@ -17,32 +17,58 @@ window.addEventListener('scroll', detectScroll);
         </div>
         <div id="skill-area">
             <InfoBlock id="skill-block" class="fade-element percent-30">
-                <h1 id="skill-block-title">Skills</h1>
+                <h1 id="skill-block-title">Hobbies & Pastimes</h1>
                 <div id="skills-area">
                     <InfoBlock class="skill fade-element percent-120">
-                        
-                        <h2>Programming</h2>
-                        <p>4 Years of C#<br>2 Years of Java<br>1 Year of C++<br></p>
+                        <font-awesome-icon :icon="['fas', 'code']" size="3x" fixed-width class="skill-icon" />
+                        <div class="vertical-divider"></div>
+                        <div class="skill-container">
+                            <h2>Programming</h2>
+                            <ul class="fa-ul">
+                                <li><span class="fa-li"><font-awesome-icon :icon="['fas', 'circle']" size="2xs" /></span>4 Years of C#</li>
+                                <li><span class="fa-li"><font-awesome-icon :icon="['fas', 'circle']" size="2xs" /></span>2 Years of Java</li>
+                                <li><span class="fa-li"><font-awesome-icon :icon="['fas', 'circle']" size="2xs" /></span>1 Year of C++</li>
+                                <li><span class="fa-li"><font-awesome-icon :icon="['fas', 'circle']" size="2xs" /></span>6 Months of Javascript</li>
+                            </ul>
+                        </div>
                     </InfoBlock>
                     <InfoBlock class="skill fade-element percent-120">
-                        <h2>Programming</h2>
-                        <p>C++, C#, Java</p>
+                        <font-awesome-icon :icon="['fas', 'person-skiing']" size="3x" fixed-width class="skill-icon" />
+                        <div class="vertical-divider"></div>
+                        <div class="skill-container">
+                            <h2>Alpine Skiing</h2>
+                            <ul class="fa-ul">
+                                <li><span class="fa-li"><font-awesome-icon :icon="['fas', 'circle']" size="2xs" /></span>Advanced Skier</li>
+                                <li><span class="fa-li"><font-awesome-icon :icon="['fas', 'circle']" size="2xs" /></span>9 Winters of Experience</li>
+                                <li><span class="fa-li"><font-awesome-icon :icon="['fas', 'circle']" size="2xs" /></span>Off-Piste Enjoyer</li>
+                                <li><span class="fa-li"><font-awesome-icon :icon="['fas', 'circle']" size="2xs" /></span>Freestyle Beginner</li>
+                            </ul>
+                        </div>
                     </InfoBlock>
                     <InfoBlock class="skill fade-element percent-120">
-                        <h2>Programming</h2>
-                        <p>C++, C#, Java</p>
+                        <font-awesome-icon :icon="['fas', 'person-hiking']" size="3x" fixed-width class="skill-icon" />
+                        <div class="vertical-divider"></div>
+                        <div class="skill-container">
+                            <h2>Hiking</h2>
+                            <ul class="fa-ul">
+                                <li><span class="fa-li"><font-awesome-icon :icon="['fas', 'circle']" size="2xs" /></span>3 Years of Hiking</li>
+                                <li><span class="fa-li"><font-awesome-icon :icon="['fas', 'circle']" size="2xs" /></span>Grouse Grind in 1 Hour</li>
+                                <li><span class="fa-li"><font-awesome-icon :icon="['fas', 'circle']" size="2xs" /></span>Once Hiked 18km in One Day</li>
+                                <li><span class="fa-li"><font-awesome-icon :icon="['fas', 'circle']" size="2xs" /></span>Scrambling is My Favourite</li>
+                            </ul>
+                        </div>
                     </InfoBlock>
                     <InfoBlock class="skill fade-element percent-120">
-                        <h2>Programming</h2>
-                        <p>C++, C#, Java</p>
-                    </InfoBlock>
-                    <InfoBlock class="skill fade-element percent-120">
-                        <h2>Programming</h2>
-                        <p>C++, C#, Java</p>
-                    </InfoBlock>
-                    <InfoBlock class="skill fade-element percent-120">
-                        <h2>Programming</h2>
-                        <p>C++, C#, Java</p>
+                        <font-awesome-icon :icon="['fas', 'person-biking']" size="3x" fixed-width class="skill-icon" />
+                        <div class="vertical-divider"></div>
+                        <div class="skill-container">
+                            <h2>Biking</h2>
+                            <ul class="fa-ul">
+                                <li><span class="fa-li"><font-awesome-icon :icon="['fas', 'circle']" size="2xs" /></span>10 Years of Biking</li>
+                                <li><span class="fa-li"><font-awesome-icon :icon="['fas', 'circle']" size="2xs" /></span>Downhill Bombing</li>
+                                <li><span class="fa-li"><font-awesome-icon :icon="['fas', 'circle']" size="2xs" /></span>Intercity Bike Rides</li>
+                            </ul>
+                        </div>
                     </InfoBlock>
                 </div>
             </InfoBlock>
@@ -72,7 +98,6 @@ window.addEventListener('scroll', detectScroll);
     }
 
     #main-block {
-        z-index: 1;
         display: flex;
         flex-direction: column;
         margin-left: 10vw;
@@ -109,12 +134,10 @@ window.addEventListener('scroll', detectScroll);
     #skill-area {
         display: flex;
         height: 100vh;
-        overflow: hidden;
         align-items: center;
     }
 
     #skill-block {
-        z-index: 1;
         display: flex;
         flex-direction: column;
         margin: auto;
@@ -142,17 +165,35 @@ window.addEventListener('scroll', detectScroll);
     }
 
     .skill {
-        z-index: 1;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        align-items: center;
         margin: 1rem;
 
         height: 15rem;
-        width: 25rem;
-        padding: 1rem;
+        width: 35rem;
+        padding: 2rem;
         border-radius: 1rem;
 
         background-color: #393053;
         color: white;
+    }
+    .skill-container {
+        height: auto;
+    }
+
+    .skill-icon {
+        margin-left: 2.5rem;
+    }
+
+    .skill .vertical-divider {
+        position: relative;
+        margin-left: 4.5rem;
+        margin-right: 4.5rem;
+
+        height: 14rem;
+        width: 0.25rem;
+
+        background-color: white;
     }
 </style>
