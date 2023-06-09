@@ -168,6 +168,8 @@ window.addEventListener('scroll', detectScroll);
         display: flex;
         flex-direction: row;
         align-items: center;
+        flex-direction: row;
+        align-items: center;
         margin: 1rem;
 
         height: 15rem;
