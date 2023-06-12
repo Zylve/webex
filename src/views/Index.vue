@@ -7,7 +7,7 @@ window.addEventListener('scroll', detectScroll);
 
 <template>
     <main>
-        <div id="main-area">
+        <div id="main-area" class="area">
             <InfoBlock id="main-block">
                 <h1 id="main-block-title">Vuk Tacic</h1>
                 <p id="main-block-info">I'm a 14 year old from Vancouver, BC. Whenever I'm not learning something new you can find me reading a good book or out skiing and hiking on the mountains. I believe that there is something to be learned from everything you experience, and that self-reflection is crucial to living a successful life.</p>
@@ -15,7 +15,7 @@ window.addEventListener('scroll', detectScroll);
             </InfoBlock>
             <img id="splash" src="@/assets/img/index/splash.jpg">
         </div>
-        <div id="skill-area">
+        <div id="skill-area" class="area">
             <InfoBlock id="skill-block" class="fade-element percent-30">
                 <h1 id="skill-block-title">Hobbies & Pastimes</h1>
                 <div id="skills-area">
@@ -73,6 +73,26 @@ window.addEventListener('scroll', detectScroll);
                 </div>
             </InfoBlock>
         </div>
+        <div id="project-area" class="area">
+            <InfoBlock id="project-block" class="fade-element percent-30">
+                <h1 id="project-block-title">Projects</h1>
+                <div id="projects-area">
+                    <InfoBlock class="project fade-element percent-120">
+                        <font-awesome-icon :icon="['fas', 'code']" size="3x" fixed-width class="project-icon" />
+                        <div class="vertical-divider"></div>
+                        <div class="skill-container">
+                            <h2>Programming</h2>
+                            <ul class="fa-ul">
+                                <li><span class="fa-li"><font-awesome-icon :icon="['fas', 'circle']" size="2xs" /></span>4 Years of C#</li>
+                                <li><span class="fa-li"><font-awesome-icon :icon="['fas', 'circle']" size="2xs" /></span>2 Years of Java</li>
+                                <li><span class="fa-li"><font-awesome-icon :icon="['fas', 'circle']" size="2xs" /></span>1 Year of C++</li>
+                                <li><span class="fa-li"><font-awesome-icon :icon="['fas', 'circle']" size="2xs" /></span>6 Months of Javascript</li>
+                            </ul>
+                        </div>
+                    </InfoBlock>
+                </div>
+            </InfoBlock>
+        </div>
     </main>
 </template>
 
@@ -88,13 +108,13 @@ window.addEventListener('scroll', detectScroll);
     }
 
     #main-area {
+        animation: fade-in 1s ease-in-out;
         display: flex;
         height: 100vh;
         overflow: hidden;
         align-items: center;
-        animation: fade-in 1s ease-in-out;
 
-        border-bottom: 2rem solid #443C68;
+        border-bottom: 2rem solid #443c68;
     }
 
     #main-block {
@@ -134,7 +154,10 @@ window.addEventListener('scroll', detectScroll);
     #skill-area {
         display: flex;
         height: 100vh;
+        overflow: hidden;
         align-items: center;
+
+        border-bottom: 2rem solid #443c68;
     }
 
     #skill-block {
@@ -177,9 +200,16 @@ window.addEventListener('scroll', detectScroll);
         padding: 2rem;
         border-radius: 1rem;
 
+        transition: background-color 0.4s ease;
+
         background-color: #393053;
         color: white;
     }
+
+    .skill:hover {
+        background-color: #443c68;
+    }
+
     .skill-container {
         height: auto;
     }
@@ -189,6 +219,68 @@ window.addEventListener('scroll', detectScroll);
     }
 
     .skill .vertical-divider {
+        position: relative;
+        margin-left: 4.5rem;
+        margin-right: 4.5rem;
+
+        height: 14rem;
+        width: 0.25rem;
+
+        background-color: white;
+    }
+
+    #project-block {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        margin-top: 5vh;
+        margin-bottom: 5vh;
+
+        height: 80vh;
+        width: 80vw;
+        padding: 1rem;
+        border-radius: 1rem;
+
+        background-color: #251e3a;
+        color: white;
+    }
+
+    #project-block-title {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #projects-area {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+
+    .project {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        flex-direction: row;
+        align-items: center;
+        margin: 1rem;
+
+        height: 15rem;
+        width: 35rem;
+        padding: 2rem;
+        border-radius: 1rem;
+
+        background-color: #393053;
+        color: white;
+    }
+    .project-container {
+        height: auto;
+    }
+
+    .project-icon {
+        margin-left: 2.5rem;
+    }
+
+    .project .vertical-divider {
         position: relative;
         margin-left: 4.5rem;
         margin-right: 4.5rem;

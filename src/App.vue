@@ -12,9 +12,4 @@
         background-color: transparent;
         overflow: hidden;
     }
-
-    #bg {
-        position: absolute;
-        z-index: -1;
-    }
 </style>

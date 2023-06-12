@@ -4,12 +4,14 @@ function isElementInViewport(element, percent) {
     percent /= 100;
     percent = 1 - percent;
 
-    return (
+    let isInViewport = (
         rect.top >= 0 &&
         rect.left >= 0 &&
         rect.bottom - (percent * height) <= (window.innerHeight || document.documentElement.clientHeight) &&
         rect.right <= (window.innerWidth || document.documentElement.clientWidth)
     );
+
+    return isInViewport;
 }
 
 export default function detectScroll() {
@@ -33,12 +35,16 @@ export default function detectScroll() {
             }
         }
 
-        if (isElementInViewport(element, percent)) {
-            if(element.classList.contains('fade-element')) {
+        if(element.classList.contains('fade-element')) {
+            if(isElementInViewport(element, percent)) {
                 setTimeout(() => {
                     element.classList.add('fade-in');
-                }, delay);
+                }, delay)
             }
         }
+
+        element.addEventListener("transitionend", (event) => {
+            element.classList.remove('fade-element');
+        });
     });
 }
