@@ -81,7 +81,7 @@ window.addEventListener('scroll', detectScroll);
                         <font-awesome-icon :icon="['fas', 'code']" size="3x" fixed-width class="project-icon" />
                         <div class="vertical-divider"></div>
                         <div class="skill-container">
-                            <h2>Programming</h2>
+                            <h2>FRC</h2>
                             <ul class="fa-ul">
                                 <li><span class="fa-li"><font-awesome-icon :icon="['fas', 'circle']" size="2xs" /></span>4 Years of C#</li>
                                 <li><span class="fa-li"><font-awesome-icon :icon="['fas', 'circle']" size="2xs" /></span>2 Years of Java</li>
@@ -109,6 +109,9 @@ window.addEventListener('scroll', detectScroll);
 
     #main-area {
         animation: fade-in 1s ease-in-out;
+    }
+
+    .area {
         display: flex;
         height: 100vh;
         overflow: hidden;
@@ -151,15 +154,6 @@ window.addEventListener('scroll', detectScroll);
         -webkit-mask-image: linear-gradient(to left, rgba(0, 0, 0, 0.667), rgba(0, 0, 0, 0));
     }
 
-    #skill-area {
-        display: flex;
-        height: 100vh;
-        overflow: hidden;
-        align-items: center;
-
-        border-bottom: 2rem solid #443c68;
-    }
-
     #skill-block {
         display: flex;
         flex-direction: column;
@@ -185,6 +179,7 @@ window.addEventListener('scroll', detectScroll);
         display: flex;
         justify-content: space-evenly;
         flex-wrap: wrap;
+        padding: 1rem;
     }
 
     .skill {
@@ -195,15 +190,17 @@ window.addEventListener('scroll', detectScroll);
         align-items: center;
         margin: 1rem;
 
-        height: 15rem;
-        width: 35rem;
+        height: auto;
+        width: 30vw;
         padding: 2rem;
         border-radius: 1rem;
 
-        transition: background-color 0.4s ease;
-
         background-color: #393053;
         color: white;
+    }
+
+    .skill-hover {
+        transition: background-color 0.4s ease-in-out;
     }
 
     .skill:hover {
@@ -254,6 +251,7 @@ window.addEventListener('scroll', detectScroll);
         display: flex;
         justify-content: space-evenly;
         flex-wrap: wrap;
+        padding: 1rem;
     }
 
     .project {
@@ -264,14 +262,23 @@ window.addEventListener('scroll', detectScroll);
         align-items: center;
         margin: 1rem;
 
-        height: 15rem;
-        width: 35rem;
+        height: auto;
+        width: 30vw;
         padding: 2rem;
         border-radius: 1rem;
 
         background-color: #393053;
         color: white;
     }
+
+    .project-hover {
+        transition: background-color 0.4s ease-in-out;
+    }
+
+    .project:hover {
+        background-color: #443c68;
+    }
+
     .project-container {
         height: auto;
     }

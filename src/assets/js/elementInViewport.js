@@ -40,11 +40,17 @@ export default function detectScroll() {
                 setTimeout(() => {
                     element.classList.add('fade-in');
                 }, delay)
+
+                element.addEventListener("transitionend", (event) => {
+                    element.classList.remove('fade-element');
+                    
+                    if(element.classList.contains("skill")) {
+                        element.classList.add("skill-hover");
+                    } else if(element.classList.contains("project")) {
+                        element.classList.add("project-hover");
+                    }
+                });
             }
         }
-
-        element.addEventListener("transitionend", (event) => {
-            element.classList.remove('fade-element');
-        });
     });
 }
