@@ -163,8 +163,8 @@ window.addEventListener('scroll', detectScroll);
 
         height: 80vh;
         width: 80vw;
-        padding: 1rem;
-        border-radius: 1rem;
+        padding: 1vh 1vw 1vh 1vw;
+        border-radius: 3vh;
 
         background-color: #251e3a;
         color: white;
@@ -177,8 +177,10 @@ window.addEventListener('scroll', detectScroll);
 
     #skills-area {
         display: flex;
-        justify-content: space-evenly;
         flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+
         padding: 1rem;
     }
 
@@ -186,14 +188,15 @@ window.addEventListener('scroll', detectScroll);
         display: flex;
         flex-direction: row;
         align-items: center;
-        flex-direction: row;
-        align-items: center;
-        margin: 1rem;
+        margin: 1vh 1vw 1vh 1vw;
 
-        height: auto;
-        width: 30vw;
-        padding: 2rem;
-        border-radius: 1rem;
+        box-sizing: border-box;
+
+        width: 40%;
+        height: 30vh;
+
+        padding: 3vh 2vw 3vh 2vw;
+        border-radius: 3vh;
 
         background-color: #393053;
         color: white;
@@ -215,12 +218,12 @@ window.addEventListener('scroll', detectScroll);
         margin-left: 2.5rem;
     }
 
-    .skill .vertical-divider {
+    .vertical-divider {
         position: relative;
-        margin-left: 4.5rem;
-        margin-right: 4.5rem;
+        margin-left: 3vw;
+        margin-right: 3vw;
 
-        height: 14rem;
+        height: 110%;
         width: 0.25rem;
 
         background-color: white;
@@ -258,14 +261,15 @@ window.addEventListener('scroll', detectScroll);
         display: flex;
         flex-direction: row;
         align-items: center;
-        flex-direction: row;
-        align-items: center;
-        margin: 1rem;
+        margin: 1vh 1vw 1vh 1vw;
 
-        height: auto;
-        width: 30vw;
-        padding: 2rem;
-        border-radius: 1rem;
+        box-sizing: border-box;
+
+        width: 40%;
+        height: 30vh;
+
+        padding: 3vh 2vw 3vh 2vw;
+        border-radius: 3vh;
 
         background-color: #393053;
         color: white;
