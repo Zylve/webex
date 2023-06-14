@@ -78,16 +78,11 @@ window.addEventListener('scroll', detectScroll);
                 <h1 id="project-block-title">Projects</h1>
                 <div id="projects-area">
                     <InfoBlock class="project fade-element percent-120">
-                        <div class="project-image" />
+                        <div class="project-image" style="background-image: url('/src/assets/img/index/frc.jpg');" />
                         <div class="vertical-divider"></div>
-                        <div class="skill-container">
+                        <div class="project-container">
                             <h2>FRC</h2>
-                            <ul class="fa-ul">
-                                <li><span class="fa-li"><font-awesome-icon :icon="['fas', 'circle']" size="2xs" /></span>4 Years of C#</li>
-                                <li><span class="fa-li"><font-awesome-icon :icon="['fas', 'circle']" size="2xs" /></span>2 Years of Java</li>
-                                <li><span class="fa-li"><font-awesome-icon :icon="['fas', 'circle']" size="2xs" /></span>1 Year of C++</li>
-                                <li><span class="fa-li"><font-awesome-icon :icon="['fas', 'circle']" size="2xs" /></span>6 Months of Javascript</li>
-                            </ul>
+                            <p>During the first two months of 2023, we built a 150lb robot to play a competitive game with teams around the world.</p>
                         </div>
                     </InfoBlock>
                 </div>
@@ -283,7 +278,8 @@ window.addEventListener('scroll', detectScroll);
 
     .project-container {
         height: auto;
-        padding: 1vh 1vw 1vh 1vw;
+        margin-right: 2vw;
+        width: 50%;
     }
 
     .project-image {
@@ -291,11 +287,9 @@ window.addEventListener('scroll', detectScroll);
         background-position: center;
         background-repeat: no-repeat;
 
-        width: 10rem;
+        width: 9vw;
         height: 100%;
         border-radius: 3vh 0 0 3vh;
-
-        background-image: url('/src/assets/img/index/frc.jpg');
     }
 
     .project .vertical-divider {
