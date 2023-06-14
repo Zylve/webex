@@ -78,7 +78,7 @@ window.addEventListener('scroll', detectScroll);
                 <h1 id="project-block-title">Projects</h1>
                 <div id="projects-area">
                     <InfoBlock class="project fade-element percent-120">
-                        <font-awesome-icon :icon="['fas', 'code']" size="3x" fixed-width class="project-icon" />
+                        <div class="project-image" />
                         <div class="vertical-divider"></div>
                         <div class="skill-container">
                             <h2>FRC</h2>
@@ -218,7 +218,7 @@ window.addEventListener('scroll', detectScroll);
         margin-left: 2.5rem;
     }
 
-    .vertical-divider {
+    .skill .vertical-divider {
         position: relative;
         margin-left: 3vw;
         margin-right: 3vw;
@@ -267,8 +267,6 @@ window.addEventListener('scroll', detectScroll);
 
         width: 40%;
         height: 30vh;
-
-        padding: 3vh 2vw 3vh 2vw;
         border-radius: 3vh;
 
         background-color: #393053;
@@ -285,18 +283,26 @@ window.addEventListener('scroll', detectScroll);
 
     .project-container {
         height: auto;
+        padding: 1vh 1vw 1vh 1vw;
     }
 
-    .project-icon {
-        margin-left: 2.5rem;
+    .project-image {
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+
+        width: 10rem;
+        height: 100%;
+        border-radius: 3vh 0 0 3vh;
+
+        background-image: url('/src/assets/img/index/frc.jpg');
     }
 
     .project .vertical-divider {
         position: relative;
-        margin-left: 4.5rem;
         margin-right: 4.5rem;
 
-        height: 14rem;
+        height: 100%;
         width: 0.25rem;
 
         background-color: white;

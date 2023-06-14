@@ -7,6 +7,10 @@
     }
 }
 
+@keyframes move-divider {
+    from {}
+}
+
 .fade-element {
     opacity: 0;
     pointer-events: none;
