@@ -79,10 +79,24 @@ window.addEventListener('scroll', detectScroll);
                 <div id="projects-area">
                     <InfoBlock class="project fade-element percent-120">
                         <div class="project-image" style="background-image: url('/src/assets/img/index/frc.jpg');" />
-                        <div class="vertical-divider"></div>
                         <div class="project-container">
                             <h2>FRC</h2>
-                            <p>During the first two months of 2023, we built a 150lb robot to play a competitive game with teams around the world.</p>
+                            <p>During the first two months of 2023, I helped build a 150lb robot to play a competitive game with teams around the world.</p>
+                        </div>
+                    </InfoBlock>
+                    <InfoBlock class="project fade-element percent-120">
+                        <div class="project-image" style="background-image: url('/src/assets/img/index/downtown-vancouver.jpg'); background-position: 40% 0%;" />
+                        <div class="project-container">
+                            <h2>Downtown Vancouver</h2>
+                            <p>I 3D printed a 1:20000 scale model of Downtown Vancouver. The project is still ongoing as I am working on a wall frame for it.</p>
+                        </div>
+                    </InfoBlock>
+                    <InfoBlock class="project fade-element percent-120">
+                        <div class="project-image" style="background-image: url('/src/assets/img/index/ict.jpg');" />
+                        <div class="project-container">
+                            <h2>ICT Projects</h2>
+                            <p>You can find my ICT websites <a href="/public/ict/ict.html" target="_blank" rel="noopener">here</a>.</p>
+                            <p>You can find my non-website ICT assignments <a href="/public/ict/productions website/index.html" target="_blank" rel="noopener">here</a>.</p>
                         </div>
                     </InfoBlock>
                 </div>
@@ -100,6 +114,14 @@ window.addEventListener('scroll', detectScroll);
         height: auto;
 
         background-color: #18122b;
+    }
+
+    a:link {
+        color: #dddddd;
+    }
+
+    a:visited {
+        color: #635985;
     }
 
     #main-area {
@@ -290,15 +312,13 @@ window.addEventListener('scroll', detectScroll);
         width: 9vw;
         height: 100%;
         border-radius: 3vh 0 0 3vh;
+        
+        transition: filter 0.4s ease-in-out;
+        border-right: 0.25rem solid white;
+        margin-right: 4.5rem;
     }
 
-    .project .vertical-divider {
-        position: relative;
-        margin-right: 4.5rem;
-
-        height: 100%;
-        width: 0.25rem;
-
-        background-color: white;
+    .project:hover .project-image {
+        filter: brightness(125%);
     }
 </style>
