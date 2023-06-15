@@ -78,21 +78,21 @@ window.addEventListener('scroll', detectScroll);
                 <h1 id="project-block-title">Projects</h1>
                 <div id="projects-area">
                     <InfoBlock class="project fade-element percent-120">
-                        <div class="project-image" style="background-image: url('/src/assets/img/index/frc.jpg');" />
+                        <div class="project-image" style="background-image: url('/static/img/frc.jpg');" />
                         <div class="project-container">
                             <h2>FRC</h2>
                             <p>During the first two months of 2023, I helped build a 150lb robot to play a competitive game with teams around the world.</p>
                         </div>
                     </InfoBlock>
                     <InfoBlock class="project fade-element percent-120">
-                        <div class="project-image" style="background-image: url('/src/assets/img/index/downtown-vancouver.jpg'); background-position: 40% 0%;" />
+                        <div class="project-image" style="background-image: url('/static/img/downtown-vancouver.jpg'); background-position: 40% 0%;" />
                         <div class="project-container">
                             <h2>Downtown Vancouver</h2>
                             <p>I 3D printed a 1:20000 scale model of Downtown Vancouver. The project is still ongoing as I am working on a wall frame for it.</p>
                         </div>
                     </InfoBlock>
                     <InfoBlock class="project fade-element percent-120">
-                        <div class="project-image" style="background-image: url('/src/assets/img/index/ict.jpg');" />
+                        <div class="project-image" style="background-image: url('/static/img/ict.jpg');" />
                         <div class="project-container">
                             <h2>ICT Projects</h2>
                             <p>You can find my ICT websites <a href="/public/ict/ict.html" target="_blank" rel="noopener">here</a>.</p>
