@@ -13,7 +13,7 @@ window.addEventListener('scroll', detectScroll);
                 <p id="main-block-info">I'm a 14 year old from Vancouver, BC. Whenever I'm not learning something new you can find me reading a good book or out skiing and hiking on the mountains. I believe that there is something to be learned from everything you experience, and that self-reflection is crucial to living a successful life.</p>
                 <p id="main-block-quote">"Show me a man who has never failed and I'll show you a man who has never achieved much."</p>
             </InfoBlock>
-            <img id="splash" src="@/assets/img/index/splash.jpg">
+            <img id="main-splash" src="@/assets/img/index/splash.jpg">
         </div>
         <div id="skill-area" class="area">
             <InfoBlock id="skill-block" class="fade-element percent-30">
@@ -102,6 +102,18 @@ window.addEventListener('scroll', detectScroll);
                 </div>
             </InfoBlock>
         </div>
+        <div id="contact-area" class="area">
+            <InfoBlock id="contact-block" class="fade-element percent-30">
+                <h1 id="contact-block-title">Contact Me</h1>
+                <ul class="fa-ul">
+                    <li><a href="mailto:vuk.tacic@gmail.com" target="_blank" rel="noopener noreferrer"><span class="fa-li"><font-awesome-icon :icon="['fas', 'envelope']" size="l" /></span>vuk.tacic@gmail.com</a></li>
+                    <li><a href="https://github.com/Zylve" target="_blank" rel="noopener noreferrer"><span class="fa-li"><font-awesome-icon :icon="['fab', 'github']" size="l" /></span>Zylve</a></li>
+                    <li><a href="https://discordapp.com/users/664237290066804766" target="_blank" rel="noopener noreferrer"><span class="fa-li"><font-awesome-icon :icon="['fab', 'discord']" size="l" /></span>Zylve#3707</a></li>
+                    <li><a href="https://www.instagram.com/zZylve/" target="_blank" rel="noopener noreferrer"><span class="fa-li"><font-awesome-icon :icon="['fab', 'instagram']" size="l" /></span>zZylve</a></li>
+                </ul>
+            </InfoBlock>
+            <img id="contact-splash" src="@/assets/img/index/splash.jpg">
+        </div>
     </main>
 </template>
 
@@ -161,7 +173,7 @@ window.addEventListener('scroll', detectScroll);
         color: #635985;
     }
 
-    #splash {
+    #main-splash {
         position: absolute;
         top: 0%;
         right: 0%;
@@ -320,5 +332,47 @@ window.addEventListener('scroll', detectScroll);
 
     .project:hover .project-image {
         filter: brightness(125%);
+    }
+
+    #contact-area {
+        position: relative;
+    }
+
+    #contact-block {
+        display: flex;
+        flex-direction: column;
+        margin-left: 10vw;
+
+        height: 30rem;
+        width: 30rem;
+        padding: 1rem;
+        border-radius: 1rem;
+
+        background-color: #251e3a;
+        color: white;
+    }
+
+    #contact-block .fa-ul {
+        font-size: 1.4rem;
+    }
+
+    #contact-block .fa-ul a {
+        color: white;
+        text-decoration: none;
+        transition: color 0.3s ease-in-out;
+    }
+
+    #contact-block .fa-ul a:hover {
+        color: #bbbbbb;
+    }
+
+    #contact-splash {
+        position: absolute;
+        top: 0%;
+        right: 0%;
+
+        height: 100vh;
+        mask-image: linear-gradient(to left, rgba(0, 0, 0, 0.667), rgba(0, 0, 0, 0));
+        -webkit-mask-image: linear-gradient(to left, rgba(0, 0, 0, 0.667), rgba(0, 0, 0, 0));
     }
 </style>
