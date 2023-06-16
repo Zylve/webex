@@ -108,8 +108,8 @@ window.addEventListener('scroll', detectScroll);
                 <ul class="fa-ul">
                     <li><a href="mailto:vuk.tacic@gmail.com" target="_blank" rel="noopener noreferrer"><span class="fa-li"><font-awesome-icon :icon="['fas', 'envelope']" size="l" /></span>vuk.tacic@gmail.com</a></li>
                     <li><a href="https://github.com/Zylve" target="_blank" rel="noopener noreferrer"><span class="fa-li"><font-awesome-icon :icon="['fab', 'github']" size="l" /></span>Zylve</a></li>
-                    <li><a href="https://discordapp.com/users/664237290066804766" target="_blank" rel="noopener noreferrer"><span class="fa-li"><font-awesome-icon :icon="['fab', 'discord']" size="l" /></span>Zylve#3707</a></li>
-                    <li><a href="https://www.instagram.com/zZylve/" target="_blank" rel="noopener noreferrer"><span class="fa-li"><font-awesome-icon :icon="['fab', 'instagram']" size="l" /></span>zZylve</a></li>
+                    <li><a href="https://discordapp.com/users/664237290066804766" target="_blank" rel="noopener noreferrer"><span class="fa-li"><font-awesome-icon :icon="['fab', 'discord']" size="l" /></span>@zylve</a></li>
+                    <li><a href="https://www.instagram.com/zZylve/" target="_blank" rel="noopener noreferrer"><span class="fa-li"><font-awesome-icon :icon="['fab', 'instagram']" size="l" /></span>@zZylve</a></li>
                 </ul>
             </InfoBlock>
             <img id="contact-splash" src="@/assets/img/index/splash.jpg">
