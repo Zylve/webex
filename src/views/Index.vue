@@ -13,7 +13,7 @@ window.addEventListener('scroll', detectScroll);
                 <p id="main-block-info">I'm a 14 year old from Vancouver, BC. Whenever I'm not learning something new you can find me reading a good book or out skiing and hiking on the mountains. I believe that there is something to be learned from everything you experience, and that self-reflection is crucial to living a successful life.</p>
                 <p id="main-block-quote">"Show me a man who has never failed and I'll show you a man who has never achieved much."</p>
             </InfoBlock>
-            <img id="main-splash" src="@/assets/img/index/splash.jpg">
+            <img id="main-splash" src="@/assets/img/index/main-splash.jpg">
         </div>
         <div id="skill-area" class="area">
             <InfoBlock id="skill-block" class="fade-element percent-30">
@@ -112,7 +112,7 @@ window.addEventListener('scroll', detectScroll);
                     <li><a href="https://www.instagram.com/zZylve/" target="_blank" rel="noopener noreferrer"><span class="fa-li"><font-awesome-icon :icon="['fab', 'instagram']" size="l" /></span>@zZylve</a></li>
                 </ul>
             </InfoBlock>
-            <img id="contact-splash" src="@/assets/img/index/splash.jpg">
+            <img id="contact-splash" src="@/assets/img/index/about-splash.jpg">
         </div>
     </main>
 </template>
