@@ -95,8 +95,8 @@ window.addEventListener('scroll', detectScroll);
                         <div class="project-image" style="background-image: url('/static/img/ict.jpg');" />
                         <div class="project-container">
                             <h2>ICT Projects</h2>
-                            <p>You can find my ICT websites <a href="/public/ict/ict.html" target="_blank" rel="noopener">here</a>.</p>
-                            <p>You can find my non-website ICT assignments <a href="/public/ict/productions website/index.html" target="_blank" rel="noopener">here</a>.</p>
+                            <p>You can find my ICT websites <a href="/ict/ict.html" target="_blank" rel="noopener">here</a>.</p>
+                            <p>You can find my non-website ICT assignments <a href="/ict/productions website/index.html" target="_blank" rel="noopener">here</a>.</p>
                         </div>
                     </InfoBlock>
                 </div>
