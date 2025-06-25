@@ -10,8 +10,7 @@ window.addEventListener('scroll', detectScroll);
         <div id="main-area" class="area">
             <InfoBlock id="main-block">
                 <h1 id="main-block-title">Vuk Tacic</h1>
-                <p id="main-block-info">I'm a 14 year old from Vancouver, BC. Whenever I'm not learning something new you can find me reading a good book or out skiing and hiking on the mountains. I believe that there is something to be learned from everything you experience, and that self-reflection is crucial to living a successful life.</p>
-                <p id="main-block-quote">"Show me a man who has never failed and I'll show you a man who has never achieved much."</p>
+                <p id="main-block-info">I'm a 16 year old from Vancouver, BC.</p>
             </InfoBlock>
             <img id="main-splash" src="@/assets/img/index/main-splash.jpg">
         </div>
@@ -25,10 +24,7 @@ window.addEventListener('scroll', detectScroll);
                         <div class="skill-container">
                             <h2>Programming</h2>
                             <ul class="fa-ul">
-                                <li><span class="fa-li"><font-awesome-icon :icon="['fas', 'circle']" size="2xs" /></span>4 Years of C#</li>
-                                <li><span class="fa-li"><font-awesome-icon :icon="['fas', 'circle']" size="2xs" /></span>2 Years of Java</li>
-                                <li><span class="fa-li"><font-awesome-icon :icon="['fas', 'circle']" size="2xs" /></span>1 Year of C++</li>
-                                <li><span class="fa-li"><font-awesome-icon :icon="['fas', 'circle']" size="2xs" /></span>6 Months of Javascript</li>
+                                I do a lot of programming. Mainly robotics related however I am getting into embedded development
                             </ul>
                         </div>
                     </InfoBlock>
@@ -36,12 +32,9 @@ window.addEventListener('scroll', detectScroll);
                         <font-awesome-icon :icon="['fas', 'person-skiing']" size="3x" fixed-width class="skill-icon" />
                         <div class="vertical-divider"></div>
                         <div class="skill-container">
-                            <h2>Alpine Skiing</h2>
+                            <h2>Skiing</h2>
                             <ul class="fa-ul">
-                                <li><span class="fa-li"><font-awesome-icon :icon="['fas', 'circle']" size="2xs" /></span>Advanced Skier</li>
-                                <li><span class="fa-li"><font-awesome-icon :icon="['fas', 'circle']" size="2xs" /></span>9 Winters of Experience</li>
-                                <li><span class="fa-li"><font-awesome-icon :icon="['fas', 'circle']" size="2xs" /></span>Off-Piste Enjoyer</li>
-                                <li><span class="fa-li"><font-awesome-icon :icon="['fas', 'circle']" size="2xs" /></span>Freestyle Beginner</li>
+                                Skiing is sick. Not that great at freestyling but I know how to have a good time on terrain.
                             </ul>
                         </div>
                     </InfoBlock>
@@ -51,10 +44,7 @@ window.addEventListener('scroll', detectScroll);
                         <div class="skill-container">
                             <h2>Hiking</h2>
                             <ul class="fa-ul">
-                                <li><span class="fa-li"><font-awesome-icon :icon="['fas', 'circle']" size="2xs" /></span>3 Years of Hiking</li>
-                                <li><span class="fa-li"><font-awesome-icon :icon="['fas', 'circle']" size="2xs" /></span>Grouse Grind in 1 Hour</li>
-                                <li><span class="fa-li"><font-awesome-icon :icon="['fas', 'circle']" size="2xs" /></span>Once Hiked 18km in One Day</li>
-                                <li><span class="fa-li"><font-awesome-icon :icon="['fas', 'circle']" size="2xs" /></span>Scrambling is My Favourite</li>
+                                Garibaldi is amazing for hiking and backpacking. I try to go on trips with my friends but it's hard to find time :(.
                             </ul>
                         </div>
                     </InfoBlock>
@@ -62,11 +52,9 @@ window.addEventListener('scroll', detectScroll);
                         <font-awesome-icon :icon="['fas', 'person-biking']" size="3x" fixed-width class="skill-icon" />
                         <div class="vertical-divider"></div>
                         <div class="skill-container">
-                            <h2>Biking</h2>
+                            <h2>Mountain Biking</h2>
                             <ul class="fa-ul">
-                                <li><span class="fa-li"><font-awesome-icon :icon="['fas', 'circle']" size="2xs" /></span>10 Years of Biking</li>
-                                <li><span class="fa-li"><font-awesome-icon :icon="['fas', 'circle']" size="2xs" /></span>Downhill Bombing</li>
-                                <li><span class="fa-li"><font-awesome-icon :icon="['fas', 'circle']" size="2xs" /></span>Intercity Bike Rides</li>
+                                Mountain Biking is dope. I got a sick 2019 Norco Range and I've been ripping it on the local trails.
                             </ul>
                         </div>
                     </InfoBlock>
@@ -81,14 +69,14 @@ window.addEventListener('scroll', detectScroll);
                         <div class="project-image" style="background-image: url('/static/img/frc.jpg');" />
                         <div class="project-container">
                             <h2>FRC</h2>
-                            <p>During the first two months of 2023, I helped build a 150lb robot to play a competitive game with teams around the world.</p>
+                            Pres. FRC is amazing.
                         </div>
                     </InfoBlock>
                     <InfoBlock class="project fade-element percent-120">
                         <div class="project-image" style="background-image: url('/static/img/downtown-vancouver.jpg'); background-position: 40% 0%;" />
                         <div class="project-container">
                             <h2>Downtown Vancouver</h2>
-                            <p>I 3D printed a 1:20000 scale model of Downtown Vancouver. The project is still ongoing as I am working on a wall frame for it.</p>
+                            Cool 1:20000 model I 3D printed a couple years ago.
                         </div>
                     </InfoBlock>
                     <InfoBlock class="project fade-element percent-120">
@@ -108,8 +96,8 @@ window.addEventListener('scroll', detectScroll);
                 <ul class="fa-ul">
                     <li><a href="mailto:vuk.tacic@gmail.com" target="_blank" rel="noopener noreferrer"><span class="fa-li"><font-awesome-icon :icon="['fas', 'envelope']" size="l" /></span>vuk.tacic@gmail.com</a></li>
                     <li><a href="https://github.com/Zylve" target="_blank" rel="noopener noreferrer"><span class="fa-li"><font-awesome-icon :icon="['fab', 'github']" size="l" /></span>Zylve</a></li>
-                    <li><a href="https://discordapp.com/users/664237290066804766" target="_blank" rel="noopener noreferrer"><span class="fa-li"><font-awesome-icon :icon="['fab', 'discord']" size="l" /></span>@zylve</a></li>
-                    <li><a href="https://www.instagram.com/zZylve/" target="_blank" rel="noopener noreferrer"><span class="fa-li"><font-awesome-icon :icon="['fab', 'instagram']" size="l" /></span>@zZylve</a></li>
+                    <li><a href="https://discordapp.com/users/664237290066804766" target="_blank" rel="noopener noreferrer"><span class="fa-li"><font-awesome-icon :icon="['fab', 'discord']" size="l" /></span>@vuktc</a></li>
+                    <li><a href="https://www.instagram.com/vuk.tc/" target="_blank" rel="noopener noreferrer"><span class="fa-li"><font-awesome-icon :icon="['fab', 'instagram']" size="l" /></span>@vuk.tc</a></li>
                 </ul>
             </InfoBlock>
             <img id="contact-splash" src="@/assets/img/index/about-splash.jpg">
